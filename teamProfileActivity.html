@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Profiles</title>
+    <style>
+        body {
+            background-image: url('GroupPhoto.png');
+            background-size: cover;
+            background-attachment: fixed ;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-repeat: no-repeat;
+        }
+
+        .welcome-section {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .additional-image {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .additional-image img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .centered-text {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .member-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .member-container img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .member-details {
+            flex: 1;
+        }
+        .member-details h2 {
+            margin-top: 0;
+        }
+        .member-details p {
+            margin-bottom: 5px;
+        }
+        .member-table-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .member-table {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            max-width: calc(50% - 10px);
+            margin: 0 auto;
+            margin-left: -280px;
+        }
+        .member-table img {
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .member-table td {
+            padding: 5px;
+        }
+        .abt-us-table {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 0px;
+            background-color: rgba(255, 255, 255, 0.7);
+            max-width: calc(80% - 10px);
+            margin: 0 auto;
+        }
+        .abt-us-table td {
+            padding: 5px;
+        }
+        .faq-table {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 0px;
+            background-color: rgba(255, 255, 255, 0.7);
+            max-width: calc(80% - 10px);
+            margin: 0 auto;
+        }
+        .faq-table td {
+            padding: 5px;
+        }
+
+        .nav-table-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            padding: 5px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .nav-table {
+            flex: 1;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            border-spacing: 5px;
+        }
+        .nav-table td {
+            padding: 5px;
+        }
+        .nav-table a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .group-table {
+            width: 150px;
+            margin-right: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .group-table h2 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .home-intro {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Styling for FAQ Section */
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fafafa;
+            color: black; /* Make text color black for better readability */
+        }
+
+        .faq-item h2 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+
+        .faq-item p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-table-container" style="margin-top: 1rem;">
+        <div class="group-table">
+            <h2>Group 6</h2>
+        </div>
+
+        <table class="nav-table">
+            <tr>
+                <td><a href="#home">Home</a></td>
+                <td><a href="#members">Members</a></td>
+                <td><a href="#abt-us">About us</a></td>
+                <td><a href="#faq">FAQ</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" style="height: 30vh;" >
+        <div class="home-intro" style="position: relative; width: 60%; margin: 20px auto; border: 1px solid rgba(255, 255, 255, 0.3); background-color: rgba(255, 255, 255, 0.362); border-radius: 10px; padding: 20px; text-align: center; color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-top: 5rem; margin-bottom: -2rem;">
+            <h2 style="position: relative; z-index: 2; background: rgba(255, 255, 255, 0); padding: 10px; text-align: justify; line-height: 1.5; font-family: 'Arial', sans-serif; ">
+                Our team of young computer engineers is dedicated to pioneering innovative solutions and setting new standards in technology. Aspiring to be recognized as the 'Golden Eggs' in the industry, we strive to combine our passion for cutting-edge development with a commitment to excellence, aiming to make a lasting impact through our creativity and expertise.
+            </h2>
+            <img src="hau.jpg" style="position: absolute; top: 50%; left: 50%; width: 300px; height: auto; opacity: 0.2; z-index: 1; transform: translate(-50%, -50%);">
+        </div>
+    </div></br></br></br>
+
+    <!-- Team Members Content -->
+    <div id="members">
+        <h1 style="margin-left: 15rem;">About Us</h1>
+
+        <!-- Member 1 -->
+        <div class="member-table-container">
+            <div class="member-container">
+                <img src="member1.jpg" alt="Josh Mark F. Escaño">
+                <div class="member-details">
+                </div>
+            </div>
+            <div class="member-table">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Member 1</h2>
+                            <p>Name: Josh Mark F. Escaño</p>
+                            <p>Hobby: sports/videogames/watching/sleeping</p>
+                            <p>Facts A very pasmado person.</p>
+                            <p>Motto: Failure is not an option when success is your destination.</p>
+                            <p>Email: <a href="joshmarkescano@gmail.com">joshmarkescano@gmail.com</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br/>
+        <!-- Member 2 -->
+        <div class="member-table-container">
+            <div class="member-container">
+                <img src="member2.jpg" alt="Lee Miranda">
+                <div class="member-details">
+                </div>
+            </div>
+            <div class="member-table">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Member 2</h2>
+                            <p>Name: Lee Miranda</p>
+                            <p>Hobby: Sports/Videogames/Spending money</p>
+                            <p>Facts About Yourself: pogi daw ako sabi ni mommy</p>
+                            <p>Motto: Whatever goes around, comes around.</p>
+                            <p>Email: <a href="vbmiranda@student.hau.edu.ph">vbmiranda@student.hau.edu.ph</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br/>
+        <!-- Member 3 -->
+        <div class="member-table-container">
+            <div class="member-container">
+                <img src="member3.jpg" alt="Whesley Ocampo">
+                <div class="member-details">
+                </div>
+            </div>
+            <div class="member-table">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Member 3</h2>
+                            <p>Name: Whesley Ocampo</p>
+                            <p>Hobby: Playing Online Games</p>
+                            <p>Facts About Yourself: Your childhood celebrity crush, especially if it was a cartoon.</p>
+                            <p>Motto: The only one who can tell you,you can’t win, is you, and you don’t have to listen.</p>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br/>
+        <!-- Member 4 -->
+                 <!-- Member 4 -->
+        <div class="member-table-container">
+            <div class="member-container">
+                <img src="member4.jpg" alt="Freiderich S. Peralta">
+                <div class="member-details">
+                </div>
+            </div>
+            <div class="member-table">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Member 4</h2>
+                            <p>Name: Freiderich S. Peralta</p>
+                            <p>Hobby: Sports/Playing the Piano/Drawing/Videogames</p>
+                            <p>Facts A friendly guy who loves to interact anyone.</p>
+                            <p>Motto: Worrying wont stop the bad stuff from happening, it just stops you from enjoying the good.</p>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br/>
+        <!-- Member 5 -->
+        <div class="member-table-container">
+            <div class="member-container">
+                <img src="member5.jpg" alt="Arjay Ranzel Z. Ramirez">
+                <div class="member-details">
+                </div>
+            </div>
+            <div class="member-table">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Member 5</h2>
+                            <p>Name: Arjay Ranzel Z. Ramirez</p>
+                            <p>Hobby: Playing FPS Games/Cycling</p>
+                            <p>Facts About Yourself: Very competitive in FPS Games</p>
+                            <p>Motto: Just be yourself and enjoy what you have</p>
+                            <p>Email: <a href="azramirez1@student.hau.edu.ph">azramirez1@student.hau.edu.ph</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br/>
+        <!-- Member 5 -->
+        <div class="member-table-container">
+            <div class="member-container">
+                <img src="member6.jpg" alt="Yun We Seong">
+                <div class="member-details">
+                </div>
+            </div>
+            <div class="member-table">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Member 6</h2>
+                            <p>Name: Yun We Seong</p>
+                            <p>Hobby: Videogames</p>
+                            <p>Facts About Yourself: Nice guy</p>
+                            <p>Motto: Don't compare yourself to the others</p>
+                            <p>Email: <a href="wyun@student.hau.edu.ph">wyun@student.hau.edu.ph</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div id="faq" style="height: 100vh;">
+        <div class="faq-table">
+            <h1 style="text-align: center; color: black;">FAQ</h1>
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <h2>What is this website about?</h2>
+                <p>- The project aims to create a group profile featuring trivial information about each member, including pictures and a group photo with a caption. We used nested tables to organize and present this information effectively.</p>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <h2>What year and class is this project for?</h2>
+                <p>- This project is part of the curriculum for Computer Engineering students in the 3rd year, first semester. It is designed to provide practical experience in developing HTML code using nested tables to showcase group information.</p>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <h2>What challenges did you face during the project?</h2>
+                <p>- One of the main challenges we encountered was obtaining our group photo. Unfortunately, some of our members fell ill during the project timeline, making it difficult to schedule and capture the group photo as planned.</p>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <h2>What did we learn from this project?</h2>
+                <p>- Through this project, we gained valuable experience in collaborating effectively to develop HTML code, namely enhancing our teamwork skills by working together towards a common goal and gaining insights into the importance of communication and flexibility in project execution.</p>
+            </div>
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+                <h2>What kind of projects does the team work on?</h2>
+                <p>- The team works on various projects ranging from web development to data analysis. More details can be found in the individual team member profiles.</p>
+            </div>
+             <!-- FAQ Item 6 -->
+            <div class="faq-item">
+                <h2>Where is your group located? How can we contact you?</h2>
+                <p>- Our group is located on Holy Angel University. We can be contacted through our individual profiles, either on our email or on our contact numbers.</p>
+            </div>
+        </div>
+        <footer style="background-color: transparent; text-align: center; padding: 20px;">
+            <p style="color: white;">© 2024 Copyright</p>
+        </footer>
+    </div>
+</body>
+</html>
